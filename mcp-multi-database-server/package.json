@@ -1,0 +1,58 @@
+{
+  "name": "@bala2404jbs/mcp-multi-database-server",
+  "version": "1.0.0",
+  "description": "MCP server for multi-database connections with read-only access control",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mcp-multi-database-server": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "databases.json.example",
+    "users.json.example",
+    ".env.example",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "database",
+    "postgres",
+    "mysql",
+    "sqlserver",
+    "mongodb",
+    "sqlite",
+    "multi-database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^11.7.0",
+    "mongodb": "^6.10.0",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.11.5",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "postgres_prod_readonly",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "database": "prod_db",
+    "username": "readonly_user",
+    "password": "your_password_here",
+    "readOnly": true,
+    "ssl": false,
+    "maxPoolSize": 5,
+    "queryTimeoutMs": 30000
+  },
+  {
+    "name": "postgres_staging_readonly",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5433,
+    "database": "staging_db",
+    "username": "readonly_user",
+    "password": "your_password_here",
+    "readOnly": true,
+    "ssl": false,
+    "maxPoolSize": 5,
+    "queryTimeoutMs": 30000
+  },
+  {
+    "name": "mysql_reporting_readonly",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "database": "reporting_db",
+    "username": "reporting_user",
+    "password": "your_password_here",
+    "readOnly": true,
+    "ssl": false,
+    "maxPoolSize": 5,
+    "queryTimeoutMs": 30000
+  },
+  {
+    "name": "sqlserver_analytics",
+    "type": "sqlserver",
+    "host": "localhost",
+    "port": 1433,
+    "database": "analytics_db",
+    "username": "analytics_user",
+    "password": "your_password_here",
+    "readOnly": true,
+    "ssl": false,
+    "maxPoolSize": 5,
+    "queryTimeoutMs": 30000
+  },
+  {
+    "name": "mongodb_logs",
+    "type": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "database": "logs_db",
+    "username": "logs_user",
+    "password": "your_password_here",
+    "readOnly": true,
+    "ssl": false,
+    "maxPoolSize": 5,
+    "queryTimeoutMs": 30000
+  },
+  {
+    "name": "sqlite_local",
+    "type": "sqlite",
+    "database": "local.db",
+    "filePath": "/absolute/path/to/local.db",
+    "readOnly": true,
+    "queryTimeoutMs": 30000
+  }
+]

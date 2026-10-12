@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Configuration files with credentials
+databases.json
+users.json
+.env
+
+# Logs
+*.log
+audit.log
+
+# npm
+npm-debug.log*
+package-lock.json
+.npmrc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+.cache/

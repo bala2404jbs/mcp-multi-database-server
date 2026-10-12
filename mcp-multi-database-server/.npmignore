@@ -1,0 +1,36 @@
+# Source files (only include compiled dist/)
+src/
+tsconfig.json
+
+# Configuration files with credentials
+databases.json
+users.json
+.env
+audit.log
+
+# Development files
+node_modules/
+*.log
+*.tmp
+
+# Git and IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Keep example files
+!databases.json.example
+!users.json.example
+!.env.example
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.ts
+*.spec.ts

@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "userId": "developer_1",
+      "allowedDatabases": [
+        "postgres_staging_readonly",
+        "mysql_reporting_readonly",
+        "sqlite_local"
+      ]
+    },
+    {
+      "userId": "lead_1",
+      "allowedDatabases": [
+        "postgres_prod_readonly",
+        "postgres_staging_readonly",
+        "mysql_reporting_readonly",
+        "sqlserver_analytics",
+        "mongodb_logs",
+        "sqlite_local"
+      ]
+    },
+    {
+      "userId": "analyst_1",
+      "allowedDatabases": [
+        "mysql_reporting_readonly",
+        "sqlserver_analytics"
+      ]
+    }
+  ]
+}
